@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir models 
+
 mkdir models_/gguf 
 mkdir models_/em 
 mkdir models_/whl
