@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=ns4IjtOWyyI
+https://www.youtube.com/watch?v=Gys4_I5fvTs
+https://www.youtube.com/watch?v=N-aRJe--txs
+
+https://www.youtube.com/watch?v=xsCedrNP9w8
+
+for linux machines 
+
+llama-b4870-bin-ubuntu-arm64.zip (26.1 MB) - For ARM64 architecture.
+llama-b4870-bin-ubuntu-vulkan-x64.zip (32.1 MB) - For x64 architecture with Vulkan support.
+llama-b4870-bin-ubuntu-x64.zip (27.7 MB) - For standard x64 architecture.
+
+to check current machine arch 
+uname -m
+
+This command will return the machine hardware name. Common outputs include:
+x86_64 for 64-bit Intel/AMD architecture (x64).
+aarch64 for 64-bit ARM architecture (ARM64).
+i386 or i686 for 32-bit Intel/AMD architecture.
+

@@ -1,0 +1,16 @@
+#version: "3.8"
+
+version: '3.8'  # Specify the version of Docker Compose
+
+services:
+  my_service:  # Name of your service
+    build:
+      context: . # Path to the directory containing the Dockerfile
+      dockerfile: Dockerfile  # Name of the Dockerfile (if it's named differently, specify it here)
+      args:
+        USE_CUDA: ${USE_CUDA:-false}  # Pass build arguments if needed
+        USE_CUDA_VER: ${USE_CUDA_VER:-cu121}
+        BUILD_HASH: ${BUILD_HASH:-dev-build}
+    volumes:
+      - ./releases:/app/releases  # Mount local 'releases' directory to '/app/releases' in the container
+    command: ["/bin/bash"]  # Command to run when the container starts
