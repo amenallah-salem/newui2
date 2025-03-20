@@ -1,5 +1,8 @@
 # New version 1.0.1
 ### LOCAL INIT 
+ngrok http 8080 
+ngrok http 5173
+
 
 ###############################
 chmod +x ./scripts/llamacpp_pull.sh
