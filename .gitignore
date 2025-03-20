@@ -1,3 +1,4 @@
 llama.cpp.bin/
 models_
 venv
+ngrok.yml

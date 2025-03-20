@@ -3,6 +3,8 @@
 ngrok http 8080 
 ngrok http 5173
 
+ngrok start --all
+
 
 ###############################
 chmod +x ./scripts/llamacpp_pull.sh
