@@ -39,5 +39,11 @@ export default defineConfig({
 	},
 	worker: {
 		format: 'es'
+	},
+	server: {
+		allowedHosts: [
+			'f02f-34-204-68-165.ngrok-free.app', // Replace with your actual ngrok URL
+			'localhost' // Keep localhost if needed
+		]
 	}
 });
