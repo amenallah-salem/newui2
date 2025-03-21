@@ -238,7 +238,7 @@
 
 						<div class="">
 							<div class="flex justify-between items-center">
-								<div class="font-medium">{$i18n.t('Manage OpenAI API Connections')}</div>
+								<div class="font-medium">{$i18n.t('Manage OpenAI API Connections #TODO')}</div>
 
 								<Tooltip content={$i18n.t(`Add Connection`)}>
 									<button
@@ -288,7 +288,7 @@
 
 			<div class="pr-1.5 my-2">
 				<div class="flex justify-between items-center text-sm mb-2">
-					<div class="  font-medium">{$i18n.t('Ollama API')}</div>
+					<div class="  font-medium">{$i18n.t('Ollama API #TODO')}</div>
 
 					<div class="mt-1">
 						<Switch
