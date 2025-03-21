@@ -1,10 +1,42 @@
 # New version 1.0.1
 ### LOCAL INIT 
+copy the ngroc file in the proper location ç
+
 ngrok http 8080 
+
 ngrok http 5173
 
 ngrok start --all
 
+Now change the 
+
+
+``` bash
+	server: {
+		allowedHosts: [
+		  '3a2e-107-22-38-203.ngrok-free.app', // Add your ngrok host here
+		  'localhost', // You can also keep localhost if needed
+		],
+	  },
+
+``` 
+
+in ```vite.config.ts```
+
+then update the tsconfig.json 
+
+```bash
+import { defineConfig } from 'cypress';
+
+export default defineConfig({
+	e2e: {
+		baseUrl: 'http://localhost:8080'
+	},
+	video: true
+});
+
+```
+in cypress.config
 
 ###############################
 chmod +x ./scripts/llamacpp_pull.sh
