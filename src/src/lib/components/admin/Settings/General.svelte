@@ -154,7 +154,7 @@
 										showChangelog.set(true);
 									}}
 								>
-									<div>{$i18n.t("See what's new")}</div>
+									<div>{$i18n.t("See what's new #TODO")}</div>
 								</button>
 							</div>
 
@@ -165,7 +165,7 @@
 									checkForVersionUpdates();
 								}}
 							>
-								{$i18n.t('Check for updates')}
+								{$i18n.t('Check for updates #TODO')}
 							</button>
 						</div>
 					</div>
@@ -177,7 +177,7 @@
 									{$i18n.t('Help')}
 								</div>
 								<div class=" text-xs text-gray-500">
-									{$i18n.t('Discover how to use Open WebUI and seek support from the community.')}
+									{$i18n.t('Discover how to use Open WebUI and seek support from the community #TODO.')}
 								</div>
 							</div>
 
