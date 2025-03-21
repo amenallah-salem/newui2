@@ -10,6 +10,7 @@ ngrok start --all
 
 Now change the 
 
+in ```vite.config.ts```
 
 ``` bash
 	server: {
@@ -21,7 +22,6 @@ Now change the
 
 ``` 
 
-in ```vite.config.ts```
 
 then update the tsconfig.json 
 
