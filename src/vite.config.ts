@@ -42,7 +42,8 @@ export default defineConfig({
 	},   
 	server: {
 		allowedHosts: [
-		  '3a2e-107-22-38-203.ngrok-free.app', // Add your ngrok host here
+		  '593e-3-82-50-89.ngrok-free.app',
+		  '353a-3-82-50-89.ngrok-free.app', // Add your ngrok host here
 		  'localhost', // You can also keep localhost if needed
 		],
 	  },
