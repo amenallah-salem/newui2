@@ -1136,7 +1136,7 @@
 	"Web Search in Chat": "",
 	"Web Search Query Generation": "",
 	"Webhook URL": "Адреса веб-куке",
-	"WebUI Settings": "Подешавања веб интерфејса",
+	"General Settings": "Подешавања веб интерфејса",
 	"WebUI URL": "WebUI адреса",
 	"WebUI will make requests to \"{{url}}/api/chat\"": "",
 	"WebUI will make requests to \"{{url}}/chat/completions\"": "",

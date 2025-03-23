@@ -1136,7 +1136,7 @@
 	"Web Search in Chat": "Cuardach Gréasáin i gComhrá",
 	"Web Search Query Generation": "Giniúint Iarratas Cuardach Gréasáin",
 	"Webhook URL": "URL Webhook",
-	"WebUI Settings": "Socruithe WebUI",
+	"General Settings": "Socruithe WebUI",
 	"WebUI URL": "URL WebUI",
 	"WebUI will make requests to \"{{url}}/api/chat\"": "Déanfaidh WebUI iarratais ar \"{{url}}/api/chat\"",
 	"WebUI will make requests to \"{{url}}/chat/completions\"": "Déanfaidh WebUI iarratais ar \"{{url}}/chat/completions\"",

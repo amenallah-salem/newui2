@@ -1136,7 +1136,7 @@
 	"Web Search in Chat": "Búsqueda web en chat",
 	"Web Search Query Generation": "Generación de consultas de búsqueda web",
 	"Webhook URL": "Webhook URL",
-	"WebUI Settings": "Configuración del WebUI",
+	"General Settings": "Configuración del WebUI",
 	"WebUI URL": "URL del WebUI",
 	"WebUI will make requests to \"{{url}}/api/chat\"": "WebUI hará solicitudes a \"{{url}}/api/chat\"",
 	"WebUI will make requests to \"{{url}}/chat/completions\"": "WebUI hará solicitudes a \"{{url}}/chat/completions\"",

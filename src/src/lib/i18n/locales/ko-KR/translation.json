@@ -1136,7 +1136,7 @@
 	"Web Search in Chat": "",
 	"Web Search Query Generation": "",
 	"Webhook URL": "웹훅 URL",
-	"WebUI Settings": "WebUI 설정",
+	"General Settings": "WebUI 설정",
 	"WebUI URL": "",
 	"WebUI will make requests to \"{{url}}/api/chat\"": "WebUI가 \"{{url}}/api/chat\"로 요청을 보냅니다",
 	"WebUI will make requests to \"{{url}}/chat/completions\"": "WebUI가 \"{{url}}/chat/completions\"로 요청을 보냅니다",
