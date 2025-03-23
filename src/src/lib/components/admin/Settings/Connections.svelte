@@ -238,7 +238,7 @@
 
 						<div class="">
 							<div class="flex justify-between items-center">
-								<div class="font-medium">{$i18n.t('Manage OpenAI API Connections #TODO')}</div>
+								<div class="font-medium">{$i18n.t('OpenAI ∕ Azure Compatible API Cnx ')}</div>
 
 								<Tooltip content={$i18n.t(`Add Connection`)}>
 									<button
@@ -288,7 +288,7 @@
 
 			<div class="pr-1.5 my-2">
 				<div class="flex justify-between items-center text-sm mb-2">
-					<div class="  font-medium">{$i18n.t('Ollama API #TODO')}</div>
+					<div class="  font-medium">{$i18n.t('Ollama API')}</div>
 
 					<div class="mt-1">
 						<Switch
@@ -305,7 +305,7 @@
 
 					<div class="">
 						<div class="flex justify-between items-center">
-							<div class="font-medium">{$i18n.t('Manage Ollama API Connections')}</div>
+							<div class="font-medium">{$i18n.t('Manage Ollama API Connections (BLOCKED/Restricted)')}</div>
 
 							<Tooltip content={$i18n.t(`Add Connection`)}>
 								<button
@@ -344,7 +344,7 @@
 							</div>
 						</div>
 
-						<div class="mt-1 text-xs text-gray-400 dark:text-gray-500">
+						<!-- <div class="mt-1 text-xs text-gray-400 dark:text-gray-500">
 							{$i18n.t('Trouble accessing Ollama?')}
 							<a
 								class=" text-gray-300 font-medium underline"
@@ -353,7 +353,9 @@
 							>
 								{$i18n.t('Click here for help.')}
 							</a>
-						</div>
+						</div> -->
+
+
 					</div>
 				{/if}
 			</div>
