@@ -294,7 +294,7 @@
 
 			<div>
 				<div class=" py-0.5 flex w-full justify-between">
-					<div class=" self-center text-xs">{$i18n.t('Landing Page Mode')}</div>
+					<div class=" self-center text-xs">{$i18n.t('Chat interface settings')}</div>
 
 					<button
 						class="p-1 px-3 text-xs flex rounded-sm transition"
