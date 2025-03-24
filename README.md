@@ -69,6 +69,9 @@ chmod +x ./scripts/start_front.sh
 chmod +x ./scripts/start_back.sh
 ./scripts/start_back.sh
 
+chmod +x ./scripts/init_pipelines.sh
+./scripts/init_pipelines.sh
+
 ```
 ### DOCKER BUILD RELEASES 
 
