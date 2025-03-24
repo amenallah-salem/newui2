@@ -2,6 +2,7 @@ llamacpp: b4877
 llamacpp_stable_hash: 363f8c5d67dcf80e00c39580dfa86dc2774d74c2
 owui: 0.5.20
 owui_stable_hash: b03fc97e287f31ad07bda896143959bc4413f7d2
+pipelines: d2b7077cce94d02ee040fef5ece4ce0e971192f7
 models-registery :
     dev:
         - 
