@@ -37,7 +37,7 @@ export default defineConfig({
 
 ```
 in cypress.config
-
+```bash
 ###############################
 chmod +x ./scripts/llamacpp_pull.sh
 ./scripts/llamacpp_pull.sh
@@ -69,11 +69,30 @@ chmod +x ./scripts/start_front.sh
 chmod +x ./scripts/start_back.sh
 ./scripts/start_back.sh
 
-
+```
 ### DOCKER BUILD RELEASES 
+
+```bash
 chmod +x ./build.sh
 ./build.sh
+```
 
+```bash
+$env:HF_ENDPOINT = "https://hf-mirror.com"
+echo $env:HF_ENDPOINT
+
+
+check for 
+
+SSLError: HTTPSConnectionPool(host='', port=443)
+#17611
+downgrading requests to 2.27.1 will solve the solution 
++
+import os
+os.environ['CURL_CA_BUNDLE'] = ''
+will solve the problem
+
+```
 
 
 Build nativally using docker 
