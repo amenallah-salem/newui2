@@ -15,7 +15,8 @@ jobs:
 
       - name: Set up Docker
         run: |
-          docker-compose up -d
+          chmod +x ./build.sh
+          ./build.sh
 
       - name: Get latest commit hash
         id: get_commit_hash
