@@ -1,0 +1,31 @@
+name: Deploy and Release on Dev Branch
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker
+        run: |
+          docker-compose up -d
+
+      - name: Get latest commit hash
+        id: get_commit_hash
+        run: echo "::set-output name=sha::$(git rev-parse --short HEAD)"
+
+      - name: Create Tag and Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="v1.0.$(date +%s)"
+          git tag $VERSION
+          git push origin $VERSION
+          gh release create $VERSION --notes "Release for commit ${{ steps.get_commit_hash.outputs.sha }}"
