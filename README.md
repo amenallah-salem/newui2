@@ -1,12 +1,31 @@
 # New version 1.0.1
 ### LOCAL INIT 
-copy the ngroc file in the proper location ç
 
+copy the ngroc file in the proper location 
+``` bash
+nano ~/.config/ngrok/ngrok.yml
+ngrok start --all 
 ngrok http 8080 
 
 ngrok http 5173
 
 ngrok start --all
+
+nano ~/.config/ngrok/ngrok.yml
+
+authtoken: 
+tunnels:
+  frontend:
+    addr: 5173
+    proto: http
+  backend:
+    addr: 8080
+    proto: http
+  pipeline:
+    addr: 9099
+    proto: http
+
+```
 
 Now change the 
 
@@ -15,8 +34,9 @@ in ```vite.config.ts```
 ``` bash
 	server: {
 		allowedHosts: [
-		  '3a2e-107-22-38-203.ngrok-free.app', // Add your ngrok host here
+		  '127.0.0.1', // You can also keep localhost if needed
 		  'localhost', // You can also keep localhost if needed
+		  '0.0.0.0', // You can also keep localhost if needed
 		],
 	  },
 
