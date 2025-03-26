@@ -1,0 +1,41 @@
+# Use a base image with curl and bash
+
+# docker build -t my-node-app -f Dockerfile.frontend .
+
+FROM ubuntu:20.04
+
+# Set environment variables
+ENV NVM_DIR=/root/.nvm
+ENV NODE_VERSION=22.13.1
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install nvm
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+# Load nvm and install Node.js
+RUN bash -c "source $NVM_DIR/nvm.sh && \
+    nvm install $NODE_VERSION && \
+    nvm use $NODE_VERSION && \
+    nvm alias default $NODE_VERSION"
+
+# Set the PATH to include the installed Node.js
+ENV PATH=$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+
+# Verify installation
+RUN node -v
+
+# Set the working directory
+WORKDIR /app
+
+# Copy your application code
+COPY ./src .
+run
+RUN npm install
+RUN npm run build --verbose
+
+CMD ["npm", "run", "dev"]

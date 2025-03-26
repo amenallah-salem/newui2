@@ -1,0 +1,43 @@
+# Use the official Python image from the Docker Hub
+
+#docker build -t backend_img -f Dockerfile.backend .
+
+FROM python:3.11-slim-bookworm
+ARG BUILD_HASH=backend-dev-build
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        bash \
+        git \
+        build-essential \
+        pandoc \
+        netcat-openbsd \
+        curl \
+        gcc \
+        python3-dev \
+        ffmpeg \
+        libsm6 \
+        libxext6 \
+        jq \
+        zip unzip && \ 
+    # Clean up to reduce image size
+    apt-get clean && \
+    apt-get install wget && \
+    rm -rf /var/lib/apt/lists/*
+
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file
+COPY ./src/backend/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY ./src .
+# Install the dependencies
+
+# Copy the rest of the application code
+RUN echo pwd 
+RUN echo pwd 
+# Expose the port the app runs on
+EXPOSE 8080
+
+

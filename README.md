@@ -73,7 +73,8 @@ chmod +x ./scripts/init_back.sh
 ./scripts/init_back.sh
 >> kill the terminal 
 ###############################
-chmod +x ./scripts/set_env.sh
+#TODO Integrated with build_start_front.sh & start_front.sh
+chmod +x ./scripts/set_env.sh  
 ./scripts/set_env.sh
 >> kill the terminal 
 ###############################

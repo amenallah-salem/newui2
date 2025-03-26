@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .  # Path to your project root
+      dockerfile: Dockerfile.frontend  # Specify the Dockerfile for the frontend
+    ports:
+      - "5173:5173"  # Map port 3000 of the container to port 3000 on the host
+    volumes:
+      - ./src:/app  # Mount the src directory for live updates
+    # environment:
+    #   - ENV_VAR_NAME=value  # Add any environment variables your backend needs
+
+  backend:
+    build:
+      context: .  # Path to your project root
+      dockerfile: Dockerfile.backend  # Specify the Dockerfile for the backend
+    ports:
+      - "8080:8080"  # Map port 8080 of the container to port 8080 on the host
+    volumes:
+      - ./src:/app  # Mount the backend directory for live updates
+    command: /bin/bash -c "cd backend && bash dev.sh"  # Change directory and run the script
+
+    # environment:
+    #   - ENV_VAR_NAME=value  # Add any environment variables your backend needs

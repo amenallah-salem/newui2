@@ -11,7 +11,11 @@ touch .env
 
 # Set the environment variables in the .env file
 {
-    echo "HF_ENDPOINT=https://hf-mirror.com"
+    echo "BACKEND_ENDPOINT='http://0.0.0.0:8080'"
+    echo "FRONTEND_ENDPOINT='http://localhost:5173/'"
+    echo "PIPELINE_ENDPOINT='http://0.0.0.0:9099'"
+    echo "LLAMA.CPP_SERVER_ENDPOINT='http://localhost:10000'"
+
     echo "OLLAMA_BASE_URL='http://localhost:11434'"
     echo "OPENAI_API_BASE_URL=''"
     echo "OPENAI_API_KEY=''"
